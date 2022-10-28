@@ -1,8 +1,7 @@
 import { useFetchMovie } from 'hooks/useFetchForCast';
 
-export const MovieCast = () => {
+const MovieCast = () => {
   const movie = useFetchMovie();
-
   return (
     movie && (
       <>
@@ -32,3 +31,4 @@ export const MovieCast = () => {
     )
   );
 };
+export { MovieCast };
