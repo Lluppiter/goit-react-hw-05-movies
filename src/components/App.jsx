@@ -1,21 +1,21 @@
 import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
-import { HomePage } from 'pages/HomePage/HomePage';
-import { MoviePage } from 'pages/MoviesPage/MoviesPage';
-import { MovieDetails } from 'pages/MovieDetails/MovieDetail';
+import { HomePage } from 'pages/HomePage';
+import { MoviePage } from 'pages/MoviesPage';
+import { MovieDetails } from 'pages/MovieDetail';
 // import { MovieCast } from 'pages/MoviesPage/MovieCast/MovieCast';
 // import { MovieReview } from 'pages/MoviesPage/MovieReviews/MovieReview';
 
 const MovieCast = lazy(() =>
-  import('../pages/MoviesPage/MovieCast/MovieCast').then(module => ({
+  import('../pages/MovieCast').then(module => ({
     ...module,
     default: module.MovieCast,
   }))
 );
 
 const MovieReview = lazy(() =>
-  import('../pages/MoviesPage/MovieReviews/MovieReview').then(module => ({
+  import('../pages/MovieReview').then(module => ({
     ...module,
     default: module.MovieReview,
   }))

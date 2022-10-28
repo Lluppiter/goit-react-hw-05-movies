@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchMoviesByQuery } from 'servises/movieApi';
+import { fetchMoviesByQuery } from 'services/movieApi';
 import { useSearchParams, Link, useLocation } from 'react-router-dom';
 
 export const SearchForm = () => {

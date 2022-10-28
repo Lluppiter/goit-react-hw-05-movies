@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchMovieById } from 'servises/movieApi';
+import { fetchMovieById } from 'services/movieApi';
 import { useParams } from 'react-router-dom';
 
 export const useFetchMovie = () => {
